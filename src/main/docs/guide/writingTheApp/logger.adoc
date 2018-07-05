@@ -1,0 +1,16 @@
+During this guide, we are going to use several log statements to show Job execution.
+
+Add at the end of `logback.xml` the next statement:
+
+[source, xml]
+.src/main/resources/logback.xml
+----
+<configuration>
+...
+..
+.
+include::{sourceDir}/src/main/resources/logback.xml[tag=logger]
+</configuration>
+----
+
+The above line configures a logger for package `example.micronaut` with log level INFO.

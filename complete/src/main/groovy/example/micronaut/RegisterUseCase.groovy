@@ -4,6 +4,7 @@ import groovy.transform.CompileStatic
 import groovy.util.logging.Slf4j
 import io.micronaut.scheduling.TaskExecutors
 import io.micronaut.scheduling.TaskScheduler
+
 import javax.inject.Named
 import javax.inject.Singleton
 import java.text.SimpleDateFormat
@@ -18,7 +19,7 @@ class RegisterUseCase {
     protected final EmailUseCase emailUseCase
 
     RegisterUseCase(EmailUseCase emailUseCase, // <1>
-                           @Named(TaskExecutors.SCHEDULED) TaskScheduler taskScheduler) { // <2>
+                    @Named(TaskExecutors.SCHEDULED) TaskScheduler taskScheduler) { // <2>
         this.emailUseCase = emailUseCase
         this.taskScheduler = taskScheduler
     }

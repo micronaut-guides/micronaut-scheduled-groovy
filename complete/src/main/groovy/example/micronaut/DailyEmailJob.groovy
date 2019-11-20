@@ -2,6 +2,7 @@ package example.micronaut
 
 import groovy.transform.CompileStatic
 import io.micronaut.scheduling.annotation.Scheduled
+
 import javax.inject.Singleton
 
 @CompileStatic

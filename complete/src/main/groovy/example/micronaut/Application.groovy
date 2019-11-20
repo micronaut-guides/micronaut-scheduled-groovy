@@ -1,9 +1,10 @@
 package example.micronaut
 
+import groovy.transform.CompileStatic
 import io.micronaut.context.event.ApplicationEventListener
 import io.micronaut.runtime.Micronaut
-import groovy.transform.CompileStatic
 import io.micronaut.runtime.server.event.ServerStartupEvent
+
 import javax.inject.Singleton
 
 @CompileStatic
@@ -19,7 +20,6 @@ class Application implements ApplicationEventListener<ServerStartupEvent> {  // 
     static void main(String[] args) {
         Micronaut.run(Application.class)
     }
-
 
     @Override
     void onApplicationEvent(ServerStartupEvent event) { // <4>

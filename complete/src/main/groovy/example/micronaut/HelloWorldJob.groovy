@@ -18,7 +18,7 @@ class HelloWorldJob {
     }
 
     @Scheduled(fixedDelay = "45s", initialDelay = "5s") // <4>
-    void executeEveryFourtyFive() {
+    void executeEveryFortyFive() {
         log.info("Simple Job every 45 seconds: {}", new SimpleDateFormat("dd/M/yyyy hh:mm:ss").format(new Date()))
     }
 }

@@ -1,4 +1,1 @@
-# Schedule periodic tasks inside your Micronaut applications #
-
-Guide: http://guides.micronaut.io/micronaut-scheduled-groovy/guide/index.html
-
+# This guide has been deprecated and moved to https://github.com/micronaut-projects/micronaut-guides-poc. Please open any issue or pull request in that repository.
